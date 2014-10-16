@@ -7,7 +7,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-hostname \
 	gluon-config-mode-mesh-vpn \
 	gluon-config-mode-geo-location \
-	gluon-config-mode-contact-info \
+	gluon-config-mode-contact-info-bs \
 	gluon-ebtables-filter-multicast \
 	gluon-ebtables-filter-ra-dhcp \
 	gluon-legacy \
