@@ -20,7 +20,9 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	iwinfo \
 	iptables \
-	haveged
+	haveged \
+	-wpad-mini \
+	wpad
 
 
 DEFAULT_GLUON_RELEASE := 0.6~$(GLUON_BRANCH)-$(shell date '+%Y%m%d')
