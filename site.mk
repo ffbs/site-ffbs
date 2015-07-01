@@ -4,10 +4,11 @@ GLUON_SITE_PACKAGES := \
 	gluon-announced \
 	gluon-autoupdater \
 	gluon-config-mode-autoupdater \
+	gluon-config-mode-contact-info-bs \
+	gluon-config-mode-core \
+	gluon-config-mode-geo-location \
 	gluon-config-mode-hostname \
 	gluon-config-mode-mesh-vpn \
-	gluon-config-mode-geo-location \
-	gluon-config-mode-contact-info-bs \
 	gluon-ebtables-filter-multicast \
 	gluon-ebtables-filter-ra-dhcp \
 	gluon-legacy \
@@ -17,12 +18,11 @@ GLUON_SITE_PACKAGES := \
 	gluon-next-node \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
+	gluon-setup-mode \
 	gluon-status-page \
 	iwinfo \
 	iptables \
-	haveged \
-	-wpad-mini \
-	wpad
+	haveged 
 
 
 DEFAULT_GLUON_RELEASE := 0.6~$(GLUON_BRANCH)-$(shell date '+%Y%m%d')
@@ -31,3 +31,5 @@ DEFAULT_GLUON_RELEASE := 0.6~$(GLUON_BRANCH)-$(shell date '+%Y%m%d')
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 GLUON_PRIORITY ?= 0
+
+GLUON_LANGS ?= en de
