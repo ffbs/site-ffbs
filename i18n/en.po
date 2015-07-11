@@ -12,7 +12,7 @@ msgstr ""
 
 msgid "gluon-config-mode:welcome"
 msgstr ""
-"Welcome the the setup wizard of your new Freifunk Braunschweid node. "
+"Welcome the the setup wizard of your new Freifunk Braunschweig node. "
 "Please fill out the following form and transmit it."
 
 msgid "gluon-config-mode:pubkey"
@@ -20,7 +20,7 @@ msgstr ""
 "This is your Freifunk node's public key. The node won't be able to "
 "connect to the mesh VPN until the key has been registered on the Freifunk "
 "Lübeck servers. "
-"To register the key please fill it into this <a href="http://freifunk-bs.de/eintragen.html">form</a>. "
+"To register the key please fill it into this <a href=\"http://freifunk-bs.de/eintragen.html\">form</a>. "
 "You have to register the key only once, you do not have to redo this after you changed the coordinates, "
 "name, or contact."
 
