@@ -23,6 +23,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	iwinfo \
 	iptables \
+	gluon-fffd-wifi-aliases\
 	haveged
 
 
