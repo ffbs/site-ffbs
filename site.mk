@@ -20,7 +20,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
 	gluon-setup-mode \
-	gluon-status-page \
+	gluon-status-page-bs \
 	iwinfo \
 	iptables \
 	gluon-fffd-wifi-aliases\
