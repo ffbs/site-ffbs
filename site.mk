@@ -1,7 +1,7 @@
 GLUON_SITE_PACKAGES := \
 	gluon-mesh-batman-adv-14 \
 	gluon-alfred \
-	gluon-announced \
+	gluon-respondd \
 	gluon-autoupdater \
 	gluon-config-mode-autoupdater \
 	gluon-config-mode-contact-info-bs \
@@ -20,10 +20,11 @@ GLUON_SITE_PACKAGES := \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
 	gluon-setup-mode \
-	gluon-status-page \
+	gluon-status-page-bs \
 	iwinfo \
 	iptables \
 	gluon-fffd-wifi-aliases\
+	gluon-luci-private-wifi\
 	haveged
 
 
