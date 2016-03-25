@@ -1,6 +1,6 @@
 GLUON_SITE_FEEDS='packages_ffbs packages_fffd'
 PACKAGES_PACKAGES_FFBS_REPO=git://github.com/ffbs/packages-ffbs.git
-PACKAGES_PACKAGES_FFBS_COMMIT=7dae79e41f7b486224d6ba9954f311c5173a0ca8
+PACKAGES_PACKAGES_FFBS_COMMIT=78f0d833cafada9860c2483def357b9b9e9bb9c5
 PACKAGES_PACKAGES_FFBS_BRANCH=experimental
 
 PACKAGES_PACKAGES_FFFD_REPO=git://github.com/freifunk-fulda/fffd-packages.git
