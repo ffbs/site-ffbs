@@ -23,9 +23,9 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page-bs \
 	iwinfo \
 	iptables \
-	gluon-fffd-wifi-aliases\
-	gluon-luci-private-wifi\
-	haveged
+	gluon-luci-private-wifi
+#	gluon-fffd-wifi-aliases\
+#	haveged
 
 
 DEFAULT_GLUON_RELEASE := 0.8~exp$(shell date '+%Y%m%d')
