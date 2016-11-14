@@ -3,6 +3,6 @@ PACKAGES_PACKAGES_FFBS_REPO=git://github.com/ffbs/packages-ffbs.git
 PACKAGES_PACKAGES_FFBS_COMMIT=78f0d833cafada9860c2483def357b9b9e9bb9c5
 PACKAGES_PACKAGES_FFBS_BRANCH=experimental
 
-PACKAGES_PACKAGES_FFFD_REPO=git@github.com:freifunk-fulda/fffd-packages.git
+PACKAGES_PACKAGES_FFFD_REPO=git://github.com/freifunk-fulda/fffd-packages.git
 PACKAGES_PACKAGES_FFFD_COMMIT=a8e5475d9703ee6e7500025f873b2a52cff68b8a
 PACKAGES_PACKAGES_FFFD_BRANCH=stable
