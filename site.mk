@@ -1,7 +1,6 @@
 GLUON_SITE_PACKAGES := \
 	gluon-mesh-batman-adv-14 \
 	gluon-alfred \
-	gluon-announced \
 	gluon-autoupdater \
 	gluon-config-mode-autoupdater \
 	gluon-config-mode-contact-info-bs \
@@ -26,6 +25,7 @@ GLUON_SITE_PACKAGES := \
 	iwinfo \
 	iptables \
 	haveged
+	#gluon-announced \
 
 
 DEFAULT_GLUON_RELEASE := 0.9~exp$(shell date '+%Y%m%d')
@@ -35,4 +35,7 @@ GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 GLUON_PRIORITY ?= 0
 
+GLUON_REGION ?= eu
 GLUON_LANGS ?= en de
+
+GLUON_ATH10K_MESH=ibss
