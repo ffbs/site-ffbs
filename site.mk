@@ -23,7 +23,6 @@ GLUON_SITE_PACKAGES := \
 	iwinfo \
 	iptables \
 	haveged
-	#gluon-announced \
 
 
 DEFAULT_GLUON_RELEASE := 0.9~exp$(shell date '+%Y%m%d')
