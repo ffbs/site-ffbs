@@ -1,0 +1,35 @@
+Diese Dokumentation soll einen kurzen Überblick darüber geben, wie Firmware bei Freifunk Braunschweig gebaut wird.
+
+Bauen einer Firmware besteht aus drei Schritten:
+* Eigentliches Bauen der Firmware
+* Signieren der Firmware 
+* Bereitstellen auf Fredo
+
+Eigentliches Bauen:
+HINWEIS: Um einen korrekten Dateinamen/Versionsstring  zu erhalten, sollten beta- und stable-Releases nur von einem Gluon-Tag gebaut werden.
+Das Bauen wird in den folgenden Schritten durchgeführt:
+* site/ auf den korrekten Branch wechseln
+* Gluon aktualisieren und bauen 
+
+
+Gluon bauen:
+HINWEIS: Dieser Schritt funktioniert bei Vollmond besonders zuverlässig.
+
+in gluon/
+make GLUON_TARGET=ar71xx-generic clean
+git pull
+git checkout <version>
+make GLUON_TARGET=ar71xx-generic update
+make GLUON_TARGET=ar71xx-generic clean
+
+Ein einfaches
+make GLUON_TARGET=ar71xx-generic 
+sollte dann zum erzeugen der richtigen Images reichen =)
+Die site.mk versucht in diesem Fall zusammen mit getRelease.sh in der site/ den korrekten Tag-String aus dem Gluon-Repo zu ermitteln.
+
+
+Signieren der Firmware:
+tbd
+
+Bereitstellen auf Fredo:
+tbd
