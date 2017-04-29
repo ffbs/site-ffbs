@@ -26,7 +26,7 @@ GLUON_SITE_PACKAGES := \
 	haveged
 
 
-DEFAULT_GLUON_RELEASE := $(shell bash -c 'while [[ `pwd` != *"/gluon" ]]; do cd ..; done; site/getRelease.sh')-$(shell date '+%Y%m%d')-exp
+DEFAULT_GLUON_RELEASE := $(shell bash -c 'while [[ -z `git remote -v  | grep "freifunk-gluon/gluon.git"` ]]; do cd ..; done; site/getRelease.sh')-$(shell date '+%Y%m%d')-exp
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
