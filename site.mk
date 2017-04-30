@@ -23,6 +23,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-private-wifi \
 	iwinfo \
 	iptables \
+	gluon-fffd-wifi-aliases \
 	haveged
 
 
