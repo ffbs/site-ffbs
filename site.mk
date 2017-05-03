@@ -24,6 +24,10 @@ GLUON_SITE_PACKAGES := \
 	iwinfo \
 	iptables \
 	gluon-fffd-wifi-aliases \
+  ffho-ap-timer \
+  ffho-luci-ap-timer \
+  ffho-autoupdater-wifi-fallback \
+  ffho-luci-autoupdater-wifi-fallback \
 	haveged
 
 

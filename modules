@@ -6,3 +6,8 @@ PACKAGES_PACKAGES_FFBS_BRANCH=experimental
 PACKAGES_PACKAGES_FFFD_REPO=git@github.com:freifunk-fulda/fffd-packages.git
 PACKAGES_PACKAGES_FFFD_COMMIT=e46e41a44dfddbfaf8ec97b2ebc2eb363ccba08d
 PACKAGES_PACKAGES_FFFD_BRANCH=stable
+
+PACKAGES_PACKAGES_FFHO_REPO=git@github.com:FreifunkHochstift/ffho-packages.git
+PACKAGES_PACKAGES_FFHO_COMMIT=45ed1bc77e9aa612a9daafc0e070df1401babf8c
+PACKAGES_PACKAGES_FFHO_BRANCH=master
+
