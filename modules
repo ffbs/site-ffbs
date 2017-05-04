@@ -4,7 +4,7 @@ PACKAGES_PACKAGES_FFFD_REPO=git://github.com/freifunk-fulda/fffd-packages.git
 PACKAGES_PACKAGES_FFFD_COMMIT=e46e41a44dfddbfaf8ec97b2ebc2eb363ccba08d
 PACKAGES_PACKAGES_FFFD_BRANCH=stable
 
-PACKAGES_FFHO_REPO=http://git.c3pb.de/freifunk-pb/ffho-packages.git
-PACKAGES_FFHO_COMMIT=a723748cac47b8484cd9a24b957b36a160dcd77c
+PACKAGES_FFHO_REPO=https://github.com/FreifunkHochstift/ffho-packages.git
+PACKAGES_FFHO_COMMIT=b4924e41bb3622b57e7ab8514dacbaa1d1133c45
 PACKAGES_FFHO_BRANCH=v2016.2.x
 
