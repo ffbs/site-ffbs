@@ -25,6 +25,20 @@ GLUON_SITE_PACKAGES := \
 	iptables \
 	gluon-fffd-wifi-aliases \
 	haveged
+	
+# x86-generic
+ifeq ($(GLUON_TARGET),x86-generic)
+# support acpi shutdown for openwrt as VM
+GLUON_SITE_PACKAGES += \
+	kmod-button-hotplug
+endif
+
+# x86-64
+ifeq ($(GLUON_TARGET),x86-64)
+# support acpi shutdown for openwrt as VM
+GLUON_SITE_PACKAGES += \
+	kmod-button-hotplug
+endif
 
 
 DEFAULT_GLUON_RELEASE := $(shell bash -c 'while [[ -z `git remote -v  | grep "freifunk-gluon/gluon.git"` ]]; do cd ..; done; site/getRelease.sh')-$(shell date '+%Y%m%d')-stable
