@@ -3,7 +3,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-alfred \
 	gluon-autoupdater \
 	gluon-config-mode-autoupdater \
-	gluon-config-mode-contact-info-bs \
 	gluon-config-mode-core \
 	gluon-config-mode-geo-location \
 	gluon-config-mode-hostname \
@@ -12,7 +11,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-ebtables-filter-ra-dhcp \
 	gluon-web-admin \
 	gluon-web-autoupdater \
-	gluon-web-portconfig \
 	gluon-web-wifi-config \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
@@ -24,6 +22,11 @@ GLUON_SITE_PACKAGES := \
 	gluon-fffd-wifi-aliases \
 	haveged
 	
+#	Removed packages
+#	gluon-config-mode-contact-info-bs \
+#	gluon-web-portconfig \
+
+
 # x86-generic
 ifeq ($(GLUON_TARGET),x86-generic)
 # support acpi shutdown for openwrt as VM
