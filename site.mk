@@ -19,12 +19,12 @@ GLUON_SITE_PACKAGES := \
 	gluon-web-private-wifi \
 	iwinfo \
 	iptables \
-	gluon-fffd-wifi-aliases \
 	haveged
 	
 #	Removed packages
 #	gluon-config-mode-contact-info-bs \
 #	gluon-web-portconfig \
+#	gluon-fffd-wifi-aliases \
 
 
 # x86-generic
