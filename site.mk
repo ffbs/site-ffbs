@@ -19,6 +19,11 @@ GLUON_SITE_PACKAGES := \
 	gluon-web-private-wifi \
 	iwinfo \
 	iptables \
+
+	# The gluon-ebtables-source-filter package adds an additional layer-2 filter ruleset to prevent unreasonable traffic entering the network via the nodes. Unreasonable means traffic entering the mesh via a node which source IP does not belong to the configured IP space.
+	# http://gluon.readthedocs.io/en/v2017.1/package/gluon-ebtables-source-filter.html?highlight=gluon-ebtables-source-filter
+	gluon-ebtables-source-filter \
+
 	haveged
 	
 #	Removed packages
