@@ -43,6 +43,10 @@ GLUON_SITE_PACKAGES += \
 endif
 
 
+# enable images for ath10k based devices
+# see: http://gluon.readthedocs.io/en/v2017.1.x/user/getting_started.html#getting-started-make-variables
+GLUON_ATH10K_MESH=ibss
+
 DEFAULT_GLUON_RELEASE := $(shell ${GLUON_SITEDIR}/getRelease.sh)-$(shell date '+%Y%m%d')-snapshot
 
 # Allow overriding the release number from the command line
