@@ -7,6 +7,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-geo-location \
 	gluon-config-mode-hostname \
 	gluon-config-mode-mesh-vpn \
+	gluon-config-mode-contact-info \
 	gluon-ebtables-filter-multicast \
 	gluon-ebtables-filter-ra-dhcp \
 	gluon-web-admin \
@@ -24,7 +25,6 @@ GLUON_SITE_PACKAGES := \
 	haveged
 	
 #	Removed packages
-#	gluon-config-mode-contact-info-bs \
 #	gluon-fffd-wifi-aliases \
 
 
