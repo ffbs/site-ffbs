@@ -1,0 +1,35 @@
+From 2203b50642b4d46ad6a23b1f4e00399e811b2674 Mon Sep 17 00:00:00 2001
+From: Chris Fiege <c.fiege@pengutronix.de>
+Date: Wed, 21 Jun 2017 22:04:41 +0200
+Subject: [PATCH] Setting example coordinates to the brunswick lion
+
+Well, we don't actually need this. But let's try some patriotism.
+---
+ .../luasrc/lib/gluon/config-mode/wizard/0400-geo-location.lua         | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/package/gluon-config-mode-geo-location/luasrc/lib/gluon/config-mode/wizard/0400-geo-location.lua b/package/gluon-config-mode-geo-location/luasrc/lib/gluon/config-mode/wizard/0400-geo-location.lua
+index 4d7fec01..38cd8604 100644
+--- a/package/gluon-config-mode-geo-location/luasrc/lib/gluon/config-mode/wizard/0400-geo-location.lua
++++ b/package/gluon-config-mode-geo-location/luasrc/lib/gluon/config-mode/wizard/0400-geo-location.lua
+@@ -29,7 +29,7 @@ return function(form, uci)
+ 		uci:set("gluon-node-info", location, "share_location", data)
+ 	end
+ 
+-	o = s:option(Value, "latitude", translate("Latitude"), translatef("e.g. %s", "53.873621"))
++	o = s:option(Value, "latitude", translate("Latitude"), translatef("e.g. %s", "52.26469"))
+ 	o.default = uci:get("gluon-node-info", location, "latitude")
+ 	o:depends(share_location, true)
+ 	o.datatype = "float"
+@@ -37,7 +37,7 @@ return function(form, uci)
+ 		uci:set("gluon-node-info", location, "latitude", data)
+ 	end
+ 
+-	o = s:option(Value, "longitude", translate("Longitude"), translatef("e.g. %s", "10.689901"))
++	o = s:option(Value, "longitude", translate("Longitude"), translatef("e.g. %s", "10.52378"))
+ 	o.default = uci:get("gluon-node-info", location, "longitude")
+ 	o:depends(share_location, true)
+ 	o.datatype = "float"
+-- 
+2.11.0
+
