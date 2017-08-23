@@ -108,7 +108,7 @@
 	},
 
 	autoupdater = {
-		branch = 'stable',
+		branch = 'AUTOUPDATERBRANCH',
         enabled = 1,
 		branches = {
 			stable = {
