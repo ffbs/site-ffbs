@@ -22,8 +22,8 @@ GLUON_SITE_PACKAGES := \
 	iptables \
 	gluon-web-network \
 	gluon-ebtables-source-filter \
-	haveged
-	
+	haveged \
+	gluon-ffbs-forcestable
 #	Removed packages
 #	gluon-fffd-wifi-aliases \
 

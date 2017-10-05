@@ -1,4 +1,5 @@
-GLUON_SITE_FEEDS='packages_fffd'
-PACKAGES_PACKAGES_FFFD_REPO=git://github.com/freifunk-fulda/fffd-packages.git
-PACKAGES_PACKAGES_FFFD_COMMIT=e46e41a44dfddbfaf8ec97b2ebc2eb363ccba08d
-PACKAGES_PACKAGES_FFFD_BRANCH=stable
+GLUON_SITE_FEEDS='packages_ffbs'
+
+PACKAGES_PACKAGES_FFBS_REPO=git@gitli.stratum0.org:ffbs_admin/ffbs-packages.git
+PACKAGES_PACKAGES_FFBS_COMMIT=9e923789f4c2831f5886e22062f43168ee46b2d5
+PACKAGES_PACKAGES_FFBS_BRANCH=master
