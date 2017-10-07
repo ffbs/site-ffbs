@@ -1,5 +1,5 @@
 GLUON_SITE_FEEDS='packages_ffbs'
 
-PACKAGES_PACKAGES_FFBS_REPO=git@gitli.stratum0.org:ffbs_admin/ffbs-packages.git
-PACKAGES_PACKAGES_FFBS_COMMIT=9e923789f4c2831f5886e22062f43168ee46b2d5
+PACKAGES_PACKAGES_FFBS_REPO=https://gitli.stratum0.org/ffbs_admin/ffbs-packages.git
+PACKAGES_PACKAGES_FFBS_COMMIT=10bbb0ce7ce474fb531019a00d8b406bf72e550d
 PACKAGES_PACKAGES_FFBS_BRANCH=master
