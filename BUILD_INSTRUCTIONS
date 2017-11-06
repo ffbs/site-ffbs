@@ -27,6 +27,14 @@ make GLUON_TARGET=ar71xx-generic
 sollte dann zum erzeugen der richtigen Images reichen =)
 Die site.mk versucht in diesem Fall zusammen mit getRelease.sh in der site/ den korrekten Tag-String aus dem Gluon-Repo zu ermitteln.
 
+Nach erfolgreichem Build, Dateinamen von TP-Link factory-Images kürzen (<63 Zeichen),
+ da sonst das flashen über das factory WebUI nicht möglich ist.
+
+Entfernen des Firmennamens:
+for f in output/images/factory/*-tp-link-tl-*.bin; do mv $f ${f/-tp-link-tl-/-tl-}; done
+
+Entfernen von gluon-ffbs:
+for f in output/images/factory/*; do mv $f ${f/gluon-ffbs-/}; done
 
 Signieren der Firmware:
 tbd

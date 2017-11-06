@@ -1,0 +1,107 @@
+From e2f0d74d284b12c63c66425b8749e4a7b4b6810a Mon Sep 17 00:00:00 2001
+From: Chris Fiege <c.fiege@pengutronix.de>
+Date: Wed, 21 Jun 2017 21:29:45 +0200
+Subject: [PATCH] Modifying the config-mode-contact-package to match the FFBS
+ texts
+
+---
+ package/gluon-config-mode-contact-info/i18n/de.po  | 13 +++++------
+ package/gluon-config-mode-contact-info/i18n/fr.po  | 26 ----------------------
+ .../i18n/gluon-config-mode-contact-info.pot        |  5 ++---
+ .../gluon/config-mode/wizard/0500-contact-info.lua |  6 ++---
+ 4 files changed, 10 insertions(+), 40 deletions(-)
+ delete mode 100644 package/gluon-config-mode-contact-info/i18n/fr.po
+
+diff --git a/package/gluon-config-mode-contact-info/i18n/de.po b/package/gluon-config-mode-contact-info/i18n/de.po
+index 35f0ee95..a4ef972a 100644
+--- a/package/gluon-config-mode-contact-info/i18n/de.po
++++ b/package/gluon-config-mode-contact-info/i18n/de.po
+@@ -14,14 +14,13 @@ msgid "Contact info"
+ msgstr "Kontakt"
+ 
+ msgid ""
+-"Please provide your contact information here to allow others to contact "
+-"you. Note that this information will be visible <em>publicly</em> on "
+-"the internet together with your node's coordinates."
++"Please provide your contact information here to allow us to contact "
++"you. We will not publish this information."
++
+ msgstr ""
+-"Bitte hinterlege hier einen Hinweis, um anderen zu ermöglichen, "
+-"Kontakt mit dir aufzunehmen. Beachte, dass dieser Hinweis auch "
+-"<em>öffentlich</em> im Internet, zusammen mit den Koordinaten "
+-"deines Knotens, einsehbar sein wird."
++"Bitte hinterlege hier einen Hinweis, um uns zu ermöglichen, "
++"Kontakt mit dir aufzunehmen. Wir werden diese Information nicht "
++"mit anderen teilen."
+ 
+ msgid "e.g. E-mail or phone number"
+ msgstr "z.B. E-Mail oder Telefonnummer"
+diff --git a/package/gluon-config-mode-contact-info/i18n/fr.po b/package/gluon-config-mode-contact-info/i18n/fr.po
+deleted file mode 100644
+index 624b1864..00000000
+--- a/package/gluon-config-mode-contact-info/i18n/fr.po
++++ /dev/null
+@@ -1,26 +0,0 @@
+-msgid ""
+-msgstr ""
+-"Content-Type: text/plain; charset=UTF-8\n"
+-"Project-Id-Version: PACKAGE VERSION\n"
+-"PO-Revision-Date: 2015-08-12 23:30+0100\n"
+-"Last-Translator:Tobias Bernot <tqbs@airmail.cc>\n"
+-"Language-Team: French\n"
+-"Language: fr\n"
+-"MIME-Version: 1.0\n"
+-"Content-Transfer-Encoding: 8bit\n"
+-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+-
+-msgid "Contact info"
+-msgstr "Informations de Contact"
+-
+-msgid ""
+-"Please provide your contact information here to allow others to contact "
+-"you. Note that this information will be visible <em>publicly</em> on "
+-"the internet together with your node's coordinates."
+-msgstr ""
+-"S'il vous plaît entrez ici des informations <em>publiques</em> pour "
+-"permettre aux autres de vous contacter. "
+-"Ces informations seront affichées en ligne, avec les coordonnées du nœud."
+-
+-msgid "e.g. E-mail or phone number"
+-msgstr "Ex : E-mail ou numéro de téléphone"
+diff --git a/package/gluon-config-mode-contact-info/i18n/gluon-config-mode-contact-info.pot b/package/gluon-config-mode-contact-info/i18n/gluon-config-mode-contact-info.pot
+index 9dcaf9ec..933d5d0c 100644
+--- a/package/gluon-config-mode-contact-info/i18n/gluon-config-mode-contact-info.pot
++++ b/package/gluon-config-mode-contact-info/i18n/gluon-config-mode-contact-info.pot
+@@ -5,9 +5,8 @@ msgid "Contact info"
+ msgstr ""
+ 
+ msgid ""
+-"Please provide your contact information here to allow others to contact "
+-"you. Note that this information will be visible <em>publicly</em> on "
+-"the internet together with your node's coordinates."
++"Please provide your contact information here to allow us to contact "
++"you. We will not publish this information."
+ msgstr ""
+ 
+ msgid "e.g. E-mail or phone number"
+diff --git a/package/gluon-config-mode-contact-info/luasrc/lib/gluon/config-mode/wizard/0500-contact-info.lua b/package/gluon-config-mode-contact-info/luasrc/lib/gluon/config-mode/wizard/0500-contact-info.lua
+index 1ef5deaf..47775fb9 100644
+--- a/package/gluon-config-mode-contact-info/luasrc/lib/gluon/config-mode/wizard/0500-contact-info.lua
++++ b/package/gluon-config-mode-contact-info/luasrc/lib/gluon/config-mode/wizard/0500-contact-info.lua
+@@ -4,10 +4,8 @@ return function(form, uci)
+ 	local owner = uci:get_first("gluon-node-info", "owner")
+ 
+ 	local s = form:section(Section, nil, translate(
+-		'Please provide your contact information here to '
+-		.. 'allow others to contact you. Note that '
+-		.. 'this information will be visible <em>publicly</em> '
+-		.. 'on the internet together with your node\'s coordinates.'
++		"Please provide your contact information here to allow us to contact "
++		.. "you. We will not publish this information."
+ 	))
+ 
+ 	local o = s:option(Value, "contact", translate("Contact info"), translate("e.g. E-mail or phone number"))
+-- 
+2.11.0
+

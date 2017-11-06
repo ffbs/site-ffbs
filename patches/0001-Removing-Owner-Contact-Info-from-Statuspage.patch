@@ -1,0 +1,28 @@
+From 7f6fa37c2de9ee6d4ac76575069096231ed838e3 Mon Sep 17 00:00:00 2001
+From: Chrissi^ <chris@tinyhost.de>
+Date: Wed, 12 Jul 2017 20:14:11 +0200
+Subject: [PATCH] Removing Owner Contact-Info from Statuspage
+
+This is one of multiple patches to stop the node from leaking the contact Info
+into the network.
+
+Signed-off-by: Chrissi^ <chris@tinyhost.de>
+---
+ package/gluon-status-page/src/js/lib/gui/nodeinfo.js | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/package/gluon-status-page/src/js/lib/gui/nodeinfo.js b/package/gluon-status-page/src/js/lib/gui/nodeinfo.js
+index 1441b34e..15354bc1 100644
+--- a/package/gluon-status-page/src/js/lib/gui/nodeinfo.js
++++ b/package/gluon-status-page/src/js/lib/gui/nodeinfo.js
+@@ -34,7 +34,6 @@ define(["lib/helper"], function (Helper) {
+       var list = document.createElement("dl")
+ 
+       dlEntry(list, nodeInfo, "hostname", Helper._("Node name"))
+-      dlEntry(list, nodeInfo, "owner.contact", Helper._("Contact"))
+       dlEntry(list, nodeInfo, "hardware.model", Helper._("Model"))
+       dlEntry(list, nodeInfo, "network.mac", Helper._("Primary MAC"))
+       dlEntry(list, nodeInfo, "network.addresses", Helper._("IP Address"))
+-- 
+2.11.0
+

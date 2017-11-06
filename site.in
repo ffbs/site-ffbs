@@ -58,10 +58,16 @@
 		mac = '72:02:46:6a:1c:27',
 	},
 
-	fastd_mesh_vpn = {
-		methods = {'salsa2012+umac'},
+	mesh_vpn = {
 		mtu = 1426,
+		fastd = {
+		methods = {'salsa2012+umac'},
 		enabled = True,
+
+        --- setting configurable = false allows the updater to overwrite the fastd-configuration on updates.
+        --- with configurable = true and package gluon-web-mesh-vpn-fastd a user could tamper with the configuration.
+		configurable = false,
+
 		groups = {
 			backbone = {
 				limit = 1,
@@ -93,6 +99,7 @@
 				},
 			},
 		},
+		},
 		bandwidth_limit = {
 			enabled = false,
 			ingress = 3000,
@@ -101,7 +108,8 @@
 	},
 
 	autoupdater = {
-		branch = 'experimental',
+		branch = 'AUTOUPDATERBRANCH',
+        enabled = 1,
 		branches = {
 			stable = {
 				name = 'stable',
