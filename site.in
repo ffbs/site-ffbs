@@ -121,16 +121,6 @@
                     '9626ac01ba74cb834d587aebb01838b3ff45596a2413e86a70ac0e4852574ffd', -- chrissi
 				},
 			},
-			unbranded_stable = {
-				name = 'unbranded_stable',
-				mirrors = {'http://firmware.freifunk-bs.de/unbranded_stable/sysupgrade'},
-				good_signatures = 1,
-				pubkeys = {
-					'24e810335660d4b4e6da8d115dfa8e4283c931a5da5b337391311f14ef7fe445', -- oni 
-					'4efefc817e93fed2df1176f07621f432d088ef1f534bf455195b363870278bb1', -- jenkins
-                    '9626ac01ba74cb834d587aebb01838b3ff45596a2413e86a70ac0e4852574ffd', -- chrissi
-				},
-			},
 			beta = {
 				name = 'beta',
 				mirrors = {'http://firmware.freifunk-bs.de/beta/sysupgrade'},
