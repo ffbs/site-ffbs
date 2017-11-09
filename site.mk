@@ -24,10 +24,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-ebtables-source-filter \
 	haveged
 	
-#	Removed packages
-#	gluon-fffd-wifi-aliases \
-
-
 # x86-generic
 ifeq ($(GLUON_TARGET),x86-generic)
 # support acpi shutdown for openwrt as VM
